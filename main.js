@@ -31,7 +31,7 @@ bot.on("ready", async () => {
   
   })
 
-bot.login(config.token)
+bot.login(process.env.TOKEN)
 
 loadCommands(bot)
 loadEvents(bot)
